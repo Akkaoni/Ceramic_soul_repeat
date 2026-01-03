@@ -2,8 +2,9 @@
 
 @mixin title {
     color: $Dark;
-    font-style: Medium;
+    font-style: normal;
     font-weight: 500;
-    line-height: 48px;
+    line-height: normal;
     text-transform: uppercase;
+    text-align: center;
 }
