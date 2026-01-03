@@ -8,3 +8,16 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+@mixin buttons {
+    background-color: transparent;
+    display: block;
+    border: 1px solid $Dark;
+    border-radius: 2px;
+    text-align: center;
+    color: $Dark;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
