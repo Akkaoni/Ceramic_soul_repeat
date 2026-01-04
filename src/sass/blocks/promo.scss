@@ -25,9 +25,9 @@
         margin: 18px auto 0 auto;
     }
 
-        &__img-vase {
-            display: none;
-        }
+    &__img-vase {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -36,8 +36,7 @@
         &__title {
             text-align: left;
             padding-inline: 0;
-            align-self: flex-end;
-            padding-bottom: 81px;
+            padding-top: 250px;
         }
 
         &__img {
@@ -75,6 +74,34 @@
 
         &__title {
             padding-left: 450px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .promo {
+
+        &__wrapper {
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+
+        &__img-vase {
+            width: 640px;
+            height: 900px;
+        }
+
+        &__btn {
+            margin: 50px auto 0 auto;
+        }
+
+        &__title {
+            padding-top: 384px;
         }
     }
 }
