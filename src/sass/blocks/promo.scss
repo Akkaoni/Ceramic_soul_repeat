@@ -68,7 +68,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 450px;
+            width: clamp(450px, 37.5vw, 640px);
+            object-fit: cover;
             height: 633px;
         }
 
@@ -83,7 +84,7 @@
         padding-top: 40px;
 
         &__wrapper {
-            margin-top: 80px;
+            margin-top: 79px;
             gap: 30px;
         }
 
