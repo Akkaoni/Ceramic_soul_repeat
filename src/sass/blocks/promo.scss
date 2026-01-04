@@ -25,7 +25,7 @@
         margin: 18px auto 0 auto;
     }
 
-    &__img-vase {
+    &__potter {
         display: none;
     }
 }
@@ -63,7 +63,7 @@
             gap: 10px;
         }
 
-        &__img-vase {
+        &__potter {
             display: block;
             position: absolute;
             top: 0;
@@ -80,6 +80,7 @@
 
 @media screen and (min-width: 1920px) {
     .promo {
+        padding-top: 40px;
 
         &__wrapper {
             margin-top: 80px;
@@ -91,7 +92,7 @@
             height: 460px;
         }
 
-        &__img-vase {
+        &__potter {
             width: 640px;
             height: 900px;
         }

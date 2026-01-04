@@ -1,10 +1,28 @@
 @use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
 
 .btn-default {
     @include buttons;
     font-size: 20px;
     width: 230px;
     height: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .btn-default {
+        &:hover {
+            background-color: $Dark;
+            color: $Light;
+            cursor: pointer;
+        }
+
+        &:active {
+            box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+            background: rgba(217, 217, 217, 0.1);
+            color: $Dark;
+            border: none;
+        }
+    }
 }
 
 @media screen and (min-width: 1920px) {

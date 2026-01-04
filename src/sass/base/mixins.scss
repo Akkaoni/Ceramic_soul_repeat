@@ -11,6 +11,7 @@
 
 @mixin buttons {
     background-color: transparent;
+    padding: 0 10px;
     display: block;
     border: 1px solid $Dark;
     border-radius: 2px;
