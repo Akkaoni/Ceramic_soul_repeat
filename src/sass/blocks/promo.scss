@@ -10,7 +10,6 @@
     }
 
     &__title {
-        
         padding-inline: 5px;
     }
 
@@ -31,16 +30,14 @@
 
         &__title {
             text-align: left;
-            width: 329px;
-            height: 58px;
-            padding: 0;
-            // margin-top: 300px;
-            justify-self: start;
+            padding-inline: 0;
+            align-self: flex-end;
+            padding-bottom: 81px;
         }
 
         &__img {
             width: 230px;
-            height:   auto;
+            height: 321px;
         }
 
         &__wrapper {
@@ -50,8 +47,7 @@
         }
 
         &__cta {
-            display: flex;
-            flex-direction: column;
+            margin: 0;
         }
     }
 }
