@@ -16,6 +16,17 @@
     font-size: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    .title-h2 {
+        font-size: 36px;
+    }
+
+    .title-h3 {
+        @include title;
+        font-size: 24px;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .title-h1-italic-bold {
         font-size: 32px;

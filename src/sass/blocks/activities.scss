@@ -7,23 +7,44 @@
         margin: 40px auto 0 auto;
     }
 
-    &__title {
-        margin-top: 40px;
-    }
-
-    &__title_margin-20px {
+    &__wrapper {
         margin-top: 20px;
+
+        :nth-child(2) {
+            margin-top: 40px;
+        }
     }
 
     &__text {
         margin-top: 20px;
         color: $Dark;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: normal;
         line-height: 19px;
     }
 
     &__text-color {
         color: $Ceramic;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .activities {
+
+        &__img {
+            width: 530px;
+            height: auto;
+        }
+
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__text {
+            width: 530px;
+            margin: 25px auto 0 auto;
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 }
