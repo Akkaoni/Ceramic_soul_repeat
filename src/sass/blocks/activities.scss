@@ -1,0 +1,29 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.activities {
+    margin-top: 60px;
+
+    &__img {
+        margin: 40px auto 0 auto;
+    }
+
+    &__title {
+        margin-top: 40px;
+    }
+
+    &__title_margin-20px {
+        margin-top: 20px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        color: $Dark;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    &__text-color {
+        color: $Ceramic;
+    }
+}
