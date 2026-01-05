@@ -3,16 +3,21 @@
 .activities {
     margin-top: 60px;
 
-    &__img {
-        margin: 40px auto 0 auto;
-    }
-
     &__wrapper {
         margin-top: 20px;
+    }
 
-        :nth-child(2) {
-            margin-top: 40px;
-        }
+    &__item {
+        width: 530px;
+        margin: 0 auto;
+    }
+
+    &__item-margin-top {
+        margin-top: 40px;
+    }
+
+    &__img {
+        margin-top: 40px;
     }
 
     &__text {
@@ -31,20 +36,46 @@
 @media screen and (min-width: 768px) {
     .activities {
 
-        &__img {
-            width: 530px;
-            height: auto;
-        }
-
         &__wrapper {
             margin-top: 40px;
         }
 
         &__text {
-            width: 530px;
-            margin: 25px auto 0 auto;
+            margin-top: 25px;
             font-size: 20px;
             line-height: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .activities {
+
+        &__wrapper {
+            margin-top: 80px;
+        }
+
+        &__item-margin-top {
+            margin: 0;
+        }
+
+        &__text {
+            margin: 25px 0 0 0;
+            width: auto;
+        }
+
+        &__text_fixed-width {
+            width: 556px;
+        }
+
+        &__item {
+            padding: 0 10px;
+            margin: 0;
+        }
+
+        &__img {
+            margin: 60px auto 0 auto;
+            width: auto;
         }
     }
 }
