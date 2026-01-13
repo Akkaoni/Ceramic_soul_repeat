@@ -1,0 +1,68 @@
+.touch {
+    margin-top: 60px;
+
+    &__form {
+        height: 428px;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__img_vase {
+        display: none;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .touch {
+        &__form {
+            position: relative;
+        }
+
+        &__img_vase {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 85px;
+            height: 85px;
+        }
+
+        &__wrapper {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .touch {
+        &__img {
+            display: block;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        &__wrapper {
+            margin-top: 80px;
+        }
+
+        &__form {
+            padding-left: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .touch {
+        margin-top: 100px;
+
+        &__form {
+            padding-left: 147px;
+            height: 356px;
+        }
+    }
+}
