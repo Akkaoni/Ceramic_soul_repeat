@@ -56,12 +56,12 @@ body {
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1140px;
+        max-width: 1140px;
     }
 }
 
 @media screen and (min-width: 1920px) {
     .container {
-        width: 1440px;
+        max-width: 1440px;
     }
 }

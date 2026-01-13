@@ -42,3 +42,13 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .activities {
+        padding: 60px 0 0 0;
+
+        &__col {
+            padding: 0 10px;
+        }
+    }
+}
