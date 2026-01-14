@@ -97,14 +97,18 @@
                 </div>
                 <div class="pure-u-1 pure-u-xxl-3-5 pure-u-xl-1-2 touch__form">
                     <form action="#">
-                        <fieldset>
+                        <fieldset class="touch__fieldset">
                             <div class="touch__input-block">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Name">
+                                <label for="name" class="touch__label">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Name" class="touch__input">
                             </div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Email">
+                            <div class="touch__input-block">
+                                <label for="email" class="touch__label">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" class="touch__input">
+                            </div>
                         </fieldset>
+                        <label for="question" class="touch__label">Your question</label>
+                        <textarea name="question" id="question" placeholder="Question"></textarea>
                     </form>
                     <img src="/src/img/form/vase.svg" alt="vase" class="touch__img_vase">
                 </div>
