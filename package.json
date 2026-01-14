@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "postcss-pxtorem": "^6.1.0",
+    "prettier": "^3.7.4",
     "sass": "^1.97.1",
     "vite": "^7.3.0"
   }
