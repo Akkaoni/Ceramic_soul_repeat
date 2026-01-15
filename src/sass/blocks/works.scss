@@ -4,17 +4,15 @@
   margin-top: 60px;
   &__slider {
     margin-top: 40px;
-    padding-bottom: 45px;
   }
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
+  &__slider-nav {
     display: none;
   }
   .swiper-pagination {
-    bottom: 0;
+    bottom: -35px;
   }
   .swiper-pagination-bullet {
     width: 10px;
@@ -35,8 +33,29 @@
       margin-top: 45px;
     }
     .swiper-slide img {
+      display: block;
       width: 400px;
       margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    &__slider {
+      margin: 80px 40px 0 40px;
+    }
+    &__slider-nav {
+      top: 40%;
+      position: absolute;
+      display: block;
+      font-size: 21px;
+    }
+    .swiper-pagination {
+      bottom: -35px;
+    }
+    &__wrapper {
+      position: relative;
+      padding-bottom: 40px;
     }
   }
 }
