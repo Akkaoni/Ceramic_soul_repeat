@@ -45,17 +45,45 @@
       margin: 80px 40px 0 40px;
     }
     &__slider-nav {
-      top: 40%;
+      top: 50%;
       position: absolute;
       display: block;
       font-size: 21px;
+      transform: translateY(-50%);
+      &:before {
+        width: auto;
+        margin: 0;
+      }
+    }
+    .swiper-slide img {
+      width: 100%;
+      margin: 0;
     }
     .swiper-pagination {
-      bottom: -35px;
+      bottom: -30px;
     }
     &__wrapper {
       position: relative;
-      padding-bottom: 40px;
+    }
+    .icon-left-open {
+      left: 13px;
+    }
+    .icon-right-open {
+      right: 13px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .works {
+    margin-top: 104px;
+    &__slider {
+      margin: 80px 85px 0 85px;
+    }
+    .icon-left-open {
+      left: 35px;
+    }
+    .icon-right-open {
+      right: 35px;
     }
   }
 }
