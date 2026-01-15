@@ -1,45 +1,34 @@
-import "../sass/style.scss";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 
-// let text = "Hello world";
-// const pi = 3.14;
-// const isOpen = false;
-// let a;
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "/src/sass/style.scss";
 
-// text = "This is text";
-
-// console.log(text);
-// console.log(a);
-// console.log(isOpen);
-
-// const object = {
-//   name: "Artur",
-//   age: "28",
-// };
-
-// const titles = [
-//   "Make your dream come true or decorate your home",
-//   "create or buy",
-//   "our store",
-//   "our workshop",
-//   "get in touch",
-// ];
-
-// function calc(a, b) {
-//   console.log(a + b);
-// }
-
-// calc(5, 5);
-// calc(10, 12);
-
-// if (isOpen) {
-//   console.log("Shop is open");
-// } else {
-//   console.log("Shop is close");
-// }
-
-// const vase = document.querySelector(".touch__img_vase");
-// console.log(vase);
-
-// vase.addEventListener("click", () => {
-//   console.log(vase);
-// });
+try {
+  new Swiper(".works__slider", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+      // when window width is >= 1920px
+      1920: {
+        spaceBetween: 35,
+      },
+    },
+    modules: [Navigation, Pagination],
+  });
+} catch (e) {}

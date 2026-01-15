@@ -1,0 +1,42 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.works {
+  margin-top: 60px;
+  &__slider {
+    margin-top: 40px;
+    padding-bottom: 45px;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-pagination {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: $Dark;
+    border-radius: 0%;
+    opacity: 1;
+    -webkit-tap-highlight-color: transparent;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $Ceramic;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works {
+    &__slider {
+      margin-top: 45px;
+    }
+    .swiper-slide img {
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
