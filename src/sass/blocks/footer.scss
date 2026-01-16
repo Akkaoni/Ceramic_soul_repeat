@@ -46,7 +46,25 @@
 
   &__form-consent {
     margin-top: 20px;
-    display: block;
+    display: flex;
+    color: $Light;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    align-items: center;
+  }
+
+  &__form-checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 14px;
+  }
+
+  &__form-link {
+    text-decoration: none;
+    color: rgba(162, 45, 198, 1);
+    margin-left: 5px;
   }
 
   &__form-btn {
