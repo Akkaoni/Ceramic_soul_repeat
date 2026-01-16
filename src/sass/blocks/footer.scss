@@ -1,2 +1,55 @@
 @use "/src/sass/base/variables.scss" as *;
 
+.footer {
+  margin-top: 95px;
+  padding: 50px 0;
+  background-color: $Dark;
+
+  .footer__title-color {
+    color: $Light;
+    text-align: left;
+  }
+
+  &__form-text {
+    margin-top: 40px;
+    color: $Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+  }
+
+  &__form-fieldset {
+    border: none;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  &__input {
+    background: transparent;
+    width: 293px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $ui-active;
+    color: $ui-active;
+    padding: 0 0 15px 0;
+
+    &::placeholder {
+      color: $ui-active;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+
+  &__form-consent {
+    margin-top: 20px;
+    display: block;
+  }
+
+  &__form-btn {
+    margin-top: 20px;
+  }
+}
