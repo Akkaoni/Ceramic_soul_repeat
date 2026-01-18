@@ -42,11 +42,10 @@
     width: 100vw;
     height: 100vh;
     background-color: $Light;
-    transition: all 0.4s;
-    opacity: 0;
+    transition: transform 0.4s;
+    
     &_active {
       transform: translateX(100%);
-      opacity: 1;
     }
 
     &-close {

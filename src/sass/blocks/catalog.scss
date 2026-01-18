@@ -2,7 +2,38 @@
 
 .catalog {
   padding-top: 50px;
+
   &__title {
     margin-top: 60px;
+  }
+
+  &__tabs {
+    margin-top: 60px;
+    border: 1px solid $Dark;
+    padding: 13px 25px;
+    display: flex;
+    column-gap: 50px;
+    row-gap: 13px;
+    flex-wrap: wrap;
+  }
+
+  &__tab {
+    position: relative;
+    color: $Dark;
+    font-style: Medium;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    padding: 0;
+    &_active::before {
+      content:'';
+      position: absolute;
+      bottom: -1px;
+      height: 1px;
+      width: 103%;
+      background-color: $Dark;
+    }
   }
 }

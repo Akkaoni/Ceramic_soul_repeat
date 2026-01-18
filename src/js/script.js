@@ -10,6 +10,12 @@ const burger = document.querySelector(".burger"),
   close = document.querySelector(".header__menu-close"),
   menu = document.querySelector(".header__menu");
 
+// Сбрасываем состояние при загрузке страницы
+window.addEventListener("load", () => {
+  menu.classList.remove("header__menu_active");
+  document.body.style.overflow = "";
+});
+
 burger.addEventListener("click", () => {
   menu.classList.add("header__menu_active");
   document.body.style.overflow = "hidden";
