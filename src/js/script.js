@@ -53,3 +53,23 @@ try {
     modules: [Navigation, Pagination],
   });
 } catch (e) {}
+
+try {
+  const tabs = document.querySelectorAll(".catalog__tab");
+  const contents = document.querySelectorAll(".catalog__content-item");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      //удаляем активный класс у всех табов и контента
+      tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+      contents.forEach((c) => (c.style.display = "none"));
+
+      //добавляем актиыный класс к нажатому табу и показываем соответмтвующий контент
+      tab.classList.add("catalog__tab_active");
+      contents[index].style.display = "flex";
+    });
+  });
+
+  //показывам первый контент при загрузке
+  contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
+} catch (e) {}
