@@ -48,8 +48,8 @@
   min-height: 32px;
   font-size: 14px;
 
-  :focus {
-    border: none;
+  &:focus {
+    border: 1px solid $Ceramic;
     outline: 1px solid $Ceramic;
   }
 }
@@ -87,7 +87,11 @@
     &:hover {
       cursor: pointer;
       color: $Ceramic;
-      outline: 1px solid $Ceramic;
+      border: 1px solid $Ceramic;
+    }
+    &:active {
+      color: $Ceramic;
+      color: 1px solid $Ceramic;
     }
   }
 }

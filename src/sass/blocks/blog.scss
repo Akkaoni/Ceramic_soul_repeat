@@ -2,117 +2,42 @@
 
 .blog {
   padding-top: 50px;
-
   &__title {
     margin-top: 60px;
   }
-
-  &__wrapper_cards {
-    display: grid;
-    margin-top: 60px;
-    row-gap: 40px;
+  &__title-h5 {
+    text-align: left;
   }
-
+  &__wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
   &__card {
     border: 1px solid $Dark;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     background: $Light;
-
-    &_title-and-btn {
+  }
+  &__data {
+    &-column {
+      padding: 25px 25px 0 25px;
       display: flex;
-      padding: 25px 25px 0 25px;
+      gap: 25px;
       flex-direction: column;
-      row-gap: 25px;
-    }
-
-    &_text {
-      padding: 0 25px 25px 25px;
-      margin-top: 25px;
-      color: $Dark;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 19px;
-    }
-
-    &_img {
-      width: 100%;
-      object-fit: cover;
     }
   }
-
-  &__decaration-box {
-    display: none;
+  &__text {
+    margin-top: 25px;
+    padding: 0 25px 25px 25px;
+    color: $Dark;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .blog {
-    &__wrapper_cards {
-      padding: 25px 25px 0 25px;
-      position: relative;
-    }
-
-    &__decaration-box {
-      display: block;
-      width: 200px;
-      height: 200px;
-      background-color: transparent;
-      border-top: 1px solid $Dark;
-      border-left: 1px solid $Dark;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-    }
-
-    &__card {
-      &_wrapper-img-and-title-btn {
-        display: flex;
-        column-gap: 25px;
-      }
-
-      &_title-and-btn {
-        row-gap: 0;
-        justify-content: space-between;
-        padding: 0;
-        padding: 25px 25px 0 0;
-      }
-
-      &_img {
-        width: 340px;
-        height: 240px;
-      }
-
-      &_text {
-        padding: 0 25px 25px 25px;
-        margin-top: 15px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .blog {
-    &__wrapper_cards {
-      column-gap: 50px;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: start;
-    }
-
-    &__card {
-      &_img {
-        width: 260px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .blog {
-    &__card {
-      min-height: 375px;
-      &_img {
-        width: 335px;
-      }
-    }
+  &__card_img {
+    min-inline-size: calc(100% + 2px);
+    transform: translateX(-1px) translateY(-1px);
   }
 }
