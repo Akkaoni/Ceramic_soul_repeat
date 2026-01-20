@@ -1,24 +1,45 @@
 @use "/src/sass/base/variables.scss" as *;
 
 @mixin title {
-    color: $Dark;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    text-align: center;
+  color: $Dark;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @mixin buttons {
-    background-color: transparent;
-    padding: 0 10px;
-    display: block;
-    border: 1px solid $Dark;
-    border-radius: 2px;
-    text-align: center;
-    color: $Dark;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+  background-color: transparent;
+  padding: 0 10px;
+  display: block;
+  border: 1px solid $Dark;
+  border-radius: 2px;
+  text-align: center;
+  color: $Dark;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@mixin angel-decoration {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $Dark;
+  }
+  &::after {
+    width: 200px;
+    height: 1px;
+  }
+  &::before {
+    width: 1px;
+    height: 200px;
+  }
 }
