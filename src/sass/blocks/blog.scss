@@ -40,6 +40,10 @@
       object-fit: cover;
     }
   }
+
+  &__decaration-box {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +54,7 @@
     }
 
     &__decaration-box {
+      display: block;
       width: 200px;
       height: 200px;
       background-color: transparent;
