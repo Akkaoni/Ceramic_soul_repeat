@@ -2,5 +2,82 @@
 
 .blog {
   padding-top: 50px;
-  
+
+  &__title {
+    margin-top: 60px;
+  }
+
+  &__wrapper_cards {
+    margin-top: 60px;
+    display: flex;
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    border: 1px solid $Dark;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    background: $Light;
+
+    &_title-and-btn {
+      padding: 25px 25px 0 25px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    &_text {
+      padding: 25px;
+      &_item {
+        color: $Dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+
+    &_img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    &__wrapper_cards {
+      padding: 25px 25px 0 25px;
+      position: relative;
+    }
+
+    &__decaration-box{
+      width: 200px;
+      height: 200px;
+      background-color: transparent;
+      border-top: 1px solid $Dark;
+      border-left: 1px solid $Dark;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    &__card {
+      &_wrapper-img-and-title-btn {
+        display: flex;
+        column-gap: 25px;
+      }
+
+      &_title-and-btn {
+        row-gap: 0;
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 25px;
+      }
+
+      &_img {
+        width: 340px;
+        height: 240px;
+      }
+    }
+  }
 }

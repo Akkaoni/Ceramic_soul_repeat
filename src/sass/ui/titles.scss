@@ -1,46 +1,53 @@
 @use "/src/sass/base/mixins.scss" as *;
 
 .title-h1-italic-bold {
-    @include title;
-    font-style: Italic;
-    font-size: 24px;
+  @include title;
+  font-style: Italic;
+  font-size: 24px;
 }
 
 .title-h2 {
-    @include title;
-    font-size: 32px;
+  @include title;
+  font-size: 32px;
 }
 
 .title-h3 {
-    @include title;
-    font-size: 20px;
+  @include title;
+  font-size: 20px;
 }
 
 .title-h4 {
-    @include title;
-    font-size: 16px;
-    font-weight: 500;
+  @include title;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title-h5 {
+  @include title;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
-    .title-h2 {
-        font-size: 36px;
-    }
+  .title-h2 {
+    font-size: 36px;
+  }
 
-    .title-h3 {
-        font-size: 24px;
-    }
+  .title-h3 {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .title-h2 {
-        font-size: 40px;
-    }
+  .title-h2 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-    .title-h1-italic-bold {
-        font-size: 32px;
-        font-weight: bold;
-    }
+  .title-h1-italic-bold {
+    font-size: 32px;
+    font-weight: bold;
+  }
 }
