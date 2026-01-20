@@ -45,7 +45,7 @@
 .btn-read {
   @include buttons;
   width: 145px;
-  height: 32px;
+  min-height: 32px;
   color: $Dark;
   font-size: 14px;
   text-transform: uppercase;

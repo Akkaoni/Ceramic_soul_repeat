@@ -9,9 +9,8 @@
 
   &__wrapper_cards {
     margin-top: 60px;
-    display: flex;
+    display: grid;
     row-gap: 40px;
-    flex-wrap: wrap;
   }
 
   &__card {
@@ -46,7 +45,7 @@
 @media screen and (min-width: 768px) {
   .blog {
     &__wrapper_cards {
-      padding: 25px 25px 0 25px;
+      padding: 26px 25px 0 25px;
       position: relative;
     }
 
@@ -71,7 +70,7 @@
         row-gap: 0;
         justify-content: space-between;
         padding: 0;
-        padding-top: 25px;
+        padding: 25px 25px 0 0;
       }
 
       &_img {
@@ -81,6 +80,33 @@
 
       &_text {
         padding: 15px 25px 25px 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__wrapper_cards {
+      column-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: start;
+    }
+
+    &__card {
+      &_img {
+        width: 260px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .blog {
+    &__card {
+      min-height: 375px;
+      &_img {
+        width: 335px;
       }
     }
   }
