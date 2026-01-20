@@ -84,15 +84,7 @@
   }
 
   .btn-read {
-    &:hover {
-      cursor: pointer;
-      color: $Ceramic;
-      border: 1px solid $Ceramic;
-    }
-    &:active {
-      color: $Ceramic;
-      color: 1px solid $Ceramic;
-    }
+    @include btn-border-color-read;
   }
 }
 

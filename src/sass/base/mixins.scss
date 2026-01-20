@@ -43,3 +43,12 @@
     height: 200px;
   }
 }
+
+@mixin btn-border-color-read {
+  &:hover,
+  &:active {
+    cursor: pointer;
+    color: $Ceramic;
+    border: 1px solid $Ceramic;
+  }
+}
