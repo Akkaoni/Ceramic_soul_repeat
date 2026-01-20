@@ -8,8 +8,8 @@
   }
 
   &__wrapper_cards {
-    margin-top: 60px;
     display: grid;
+    margin-top: 60px;
     row-gap: 40px;
   }
 
@@ -19,20 +19,19 @@
     background: $Light;
 
     &_title-and-btn {
-      padding: 25px 25px 0 25px;
       display: flex;
+      padding: 25px 25px 0 25px;
       flex-direction: column;
       row-gap: 25px;
     }
 
     &_text {
-      padding: 25px;
-      &_item {
-        color: $Dark;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-      }
+      padding: 0 25px 25px 25px;
+      margin-top: 25px;
+      color: $Dark;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
     }
 
     &_img {
@@ -49,7 +48,7 @@
 @media screen and (min-width: 768px) {
   .blog {
     &__wrapper_cards {
-      padding: 26px 25px 0 25px;
+      padding: 25px 25px 0 25px;
       position: relative;
     }
 
@@ -84,7 +83,8 @@
       }
 
       &_text {
-        padding: 15px 25px 25px 25px;
+        padding: 0 25px 25px 25px;
+        margin-top: 15px;
       }
     }
   }
