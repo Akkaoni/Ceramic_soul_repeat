@@ -61,3 +61,32 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__wrapper {
+      gap: 50px;
+      align-items: flex-start;
+    }
+    &__card {
+      width: 520px;
+
+      &_img {
+        height: calc(240px + 1px);
+        transform: translateX(-1px);
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .blog {
+    &__wrapper {
+      align-items: normal;
+    }
+    &__card {
+      width: 670px;
+    }
+  }
+}
