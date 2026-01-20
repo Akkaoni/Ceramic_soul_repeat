@@ -50,7 +50,7 @@
       position: relative;
     }
 
-    &__decaration-box{
+    &__decaration-box {
       width: 200px;
       height: 200px;
       background-color: transparent;
@@ -77,6 +77,10 @@
       &_img {
         width: 340px;
         height: 240px;
+      }
+
+      &_text {
+        padding: 15px 25px 25px 25px;
       }
     }
   }
