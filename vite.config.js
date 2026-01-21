@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         main: resolve(__dirname, "catalog.html"),
         main: resolve(__dirname, "blog.html"),
+        main: resolve(__dirname, "about.html"),
       },
     },
   },
