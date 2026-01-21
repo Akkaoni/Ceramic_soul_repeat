@@ -3,6 +3,20 @@
 .touch {
   margin-top: 60px;
 
+  .just-validate-error-field {
+    outline: 1px solid $ui-error;
+    border: none;
+    &:hover {
+      outline: 1px solid $ui-error;
+      border: none;
+    }
+  }
+
+  &__checkbox.just-validate-error-field {
+    outline: none;
+    border: none;
+  }
+
   &__img {
     display: none;
   }
