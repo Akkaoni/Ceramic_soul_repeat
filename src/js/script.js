@@ -129,3 +129,37 @@ try {
       },
     );
 } catch (e) {}
+
+try {
+  const validatorFooter = new JustValidate(".footer_f");
+  validatorFooter
+    .addField(
+      "#e-mail",
+      [
+        {
+          rule: "required",
+        },
+        {
+          rule: "email",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#e-mail")
+          .parentElement.querySelector(".email__error_masage"),
+      },
+    )
+    .addField(
+      "#footer-checkbox",
+      [
+        {
+          rule: "required",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#footer-checkbox")
+          .parentElement.parentElement.querySelector(".check__error_masage"),
+      },
+    );
+} catch (e) {}

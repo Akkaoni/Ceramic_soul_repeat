@@ -5,6 +5,14 @@
   padding: 50px 0;
   background-color: $Dark;
 
+  .just-validate-error-field {
+    border-bottom: 1px solid $ui-error;
+
+    &::placeholder {
+      color: $ui-error;
+    }
+  }
+
   .footer__title-color {
     color: $Light;
     text-align: left;
