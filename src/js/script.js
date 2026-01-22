@@ -127,7 +127,16 @@ try {
           .querySelector("#checkbox")
           .parentElement.parentElement.querySelector(".checkbox-error-message"),
       },
-    );
+    )
+    .onSuccess((event) => {
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+
+      fetch("", {
+        method: "POST",
+        body: formData,
+      });
+    });
 } catch (e) {}
 
 try {

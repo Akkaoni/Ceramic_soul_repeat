@@ -12,6 +12,13 @@
     }
   }
 
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: $Dark;
+    -webkit-box-shadow: 0 0 0px 40rem $Light inset;
+  }
+
   &__checkbox.just-validate-error-field {
     outline: none;
     border: none;
