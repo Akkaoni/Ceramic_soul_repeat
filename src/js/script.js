@@ -132,10 +132,15 @@ try {
       const form = event.currentTarget;
       const formData = new FormData(form);
 
-      fetch("", {
+      fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         body: formData,
-      });
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Secsess", data);
+          form.reset();
+        });
     });
 } catch (e) {}
 
@@ -170,5 +175,19 @@ try {
           .querySelector("#footer-checkbox")
           .parentElement.parentElement.querySelector(".check__error_masage"),
       },
-    );
+    )
+    .onSuccess((event) => {
+      const form_f = event.currentTarget;
+      const formData = new FormData(form_f);
+
+      fetch("https://httpbin.org/post", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Secsess", data);
+          form_f.reset();
+        });
+    });
 } catch (e) {}
